@@ -647,6 +647,12 @@ h2 {
   text-align: center;
 }
 
+.single-post {
+  background: url(../img/Novosty.jpg) no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
 @media screen and (max-width: 1200px) {
   .menu-overlay_open {
     width: 72vw;
