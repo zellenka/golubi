@@ -132,6 +132,25 @@ h2 {
   font-weight: 400;
   color: #ffffff; }
 
+.menu__main-item_link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #6b6b6b;
+  transition: width .3s;
+  }
+
+  .menu__main-item_link:hover::after {
+    width: 100%;
+  }
+
+  .menu__main-item_link:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #6b6b6b;
+  }
+
 .menu-overlay {
   width: 0;
   height: 0;
@@ -260,12 +279,20 @@ h2 {
   background-image: linear-gradient(0deg, #cb0000 0%, #ff0000 100%);
   border: none;
   padding: 5px 0;
-  font-size: 42px;
+  font-size: 38px;
   letter-spacing: 5px;
   line-height: 1;
   color: #ffffff;
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+transition: all .3s }
+
+.orders-block__button:hover {
+  border-radius: 28px;
+  border: 3px solid #fff;
+  transition: all .3s;
+  font-size: 36px;
+}
 
 .about {
   background: url(../img/O-nas.jpg) no-repeat;
@@ -385,13 +412,25 @@ h2 {
 .news__itemImg-link {
   margin-bottom: 30px; }
   .news__itemImg-link img {
-    width: 100%; }
+    width: 100%;
+    transition: all .3s; }
+
+    .news__itemImg-link img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px 5px #495057b8;
+      transition: all .3s;
+    }
 
 .news__itemTxt-link {
   margin-bottom: 35px;
   font-size: 16px;
   color: #6b6b6b;
   text-transform: uppercase; }
+
+.news__itemTxt-link:hover {
+  text-decoration: none;
+  color: #20bfdc;
+}
 
 .reviews {
   background: url(../img/Otzivi.jpg) no-repeat;
@@ -630,6 +669,7 @@ h2 {
   margin: 0 auto;
   object-fit: cover;
   margin-bottom: 35px;
+  width: 100%;
 }
 
 .post__content {
@@ -680,15 +720,21 @@ h2 {
   .orders-block__button {
     font-size: 22px;
     height: 75px; }
+    .orders-block__button:hover {
+      font-size: 18px
+    }
   .orders-block__text-block {
     min-height: 150px; }
   .services__text {
-    font-size: 20px; } }
+    font-size: 20px; }
+    .modal-order {
+      padding: 50px 90px;
+    } }
 
 @media screen and (max-width: 768px) {
   .menu-overlay_open {
     width: 105vw;
-    height: 115vw; }
+    height: 138vw; }
   .footer__logo-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -700,9 +746,78 @@ h2 {
             justify-content: center;
     margin-bottom: 20px; }
   .modal-order {
-    padding: 50px 100px; } }
+    padding: 20px 10px;
+  width: 100%; }
+    .orders-block__button {
+      font-size: 16px;
+      height: 60px; }
+      .orders-block__button:hover {
+        font-size: 14px
+      }
+      .orders-block__text {
+        font-size: 22px;
+      }
+      .modal-form__input {
+        width: 100%;
+      }
+      .about__img-block {
+        margin-bottom: 20px;
+      }
+      .footer__menu-block {
+        justify-content: center;
+        align-items: center;
+      }
+      .blog-item {
+        flex-wrap: wrap;
+      }
+      .blog__img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog__block {
+        margin: 0;
+        width: 100%;
+      }
+     }
 
 @media screen and (max-width: 600px) {
   .header, .contacts, .footer {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+    .menu-overlay_open {
+      border-radius: 0;
+      height: 750px;
+      width: 260px;
+    }
+    .blog-list {
+      padding-left: 15px;
+      padding-right: 15px;
+    } 
+  }
+
+    @media screen and (max-width: 576px) {
+      .orders-block {
+        margin-bottom: 20px;
+      }
+      .orders-block__text {
+        font-size: 26px;
+      }
+      .orders-block__text-block{
+        min-height: auto;
+        max-width: 100%;
+      }
+      .news__item_big, .news__item_small {
+        width: 100%
+      }
+      .contacts__block {
+        width: 100%;
+        padding: 0 35px;
+      }
+      .footer__menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .footer__menu-item {
+        width: 40%;
+        text-align: center;
+    }
