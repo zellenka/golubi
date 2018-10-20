@@ -44,6 +44,10 @@ h2 {
   margin: 0;
 }
 
+.header__row_small img {
+  max-width: 190px;
+}
+
 .header__logo {
   max-width: 315px;
   width: 100%;
@@ -825,7 +829,7 @@ h2 {
 
 .single-post, .blog {
   background: url(../img/Novosty.jpg) no-repeat;
-  -webkit-background-size: cover;
+  background-position: 50%;
   background-size: cover;
 }
 
