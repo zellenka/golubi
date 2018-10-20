@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+	AOS.init();
+
 	$(".animsition").animsition({
 	  inClass               :   'fade-in-left',
 	  outClass              :   'fade-out-left-lg',
@@ -21,9 +23,9 @@ $( document ).ready(function() {
 	//menu
 
     $(".menu__button").click(function(){
-		$(this).toggleClass("menu__button_open");
-		$(".menu-block").toggleClass("menu-block_open");
-		$(".menu-overlay").toggleClass("menu-overlay_open");
+		$(this).addClass("menu__button_open");
+		$(".menu-block").addClass("menu-block_open");
+		$(".menu-overlay").addClass("menu-overlay_open");
 	});
 
 	$(document).click(function(e) {
@@ -44,6 +46,10 @@ $( document ).ready(function() {
 		$('html, body').animate({
 			scrollTop: $(".modal-order").offset().top
 		});
+	});
+
+	$(".modal-order__clouse").click(function() {
+		$(".modal-order").toggleClass("modal-order__open");
 	});
 
 	$(document).click(function(e) {

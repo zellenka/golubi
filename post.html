@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	    crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="/css/animate.css"> -->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/animsition.min.css">
-</head>
+		<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Document</title>
+				
+				<link rel="stylesheet" href="css/reset.css">
+				<link rel="stylesheet" href="css/bootstrap.min.css" >
+				<link rel="stylesheet" href="css/main.css">
+				<link rel="stylesheet" href="css/animsition.min.css">
+				<link rel="stylesheet" href="css/aos.css">
+			</head>
 <body class="animsition">
 	<header class="header">
 		<div class="container">
@@ -33,7 +34,7 @@
 					</ul>
 					<ul class="menu__main">
 						<li class="menu__main-item">
-							<a href="/" class="menu__main-item_link animsition-link">головна</a>
+							<a href="/golubi" class="menu__main-item_link animsition-link">головна</a>
 						</li>
 						<li class="menu__main-item">
 							<a href="/golubi/blog.html" class="menu__main-item_link animsition-link">про нас</a>
@@ -58,7 +59,7 @@
             <div class="row">
                <div class="col-lg-12 post">
 				   <img src="https://picsum.photos/g/500/315/?random" alt="" class="post__img">
-				   <h1 class="post__heading">Sed ut perspiciatis, unde omnis iste </h1>
+				   <h1 class="post__heading" data-aos="flip-left">Sed ut perspiciatis, unde omnis iste </h1>
 				   
 				   <div class="post__content">
 					   <p>
@@ -70,7 +71,7 @@
 				   </div>
 				   
 				   <ul class="news__list post__list">
-					<li class="news__item news__item_small">
+					<li class="news__item news__item_small" data-aos="fade-up">
 						<a href="" class="news__itemImg-link">
 							<img src="https://picsum.photos/g/500/315/?random" alt="">
 						</a>
@@ -79,7 +80,7 @@
 							
 						</a>
 					</li>
-					<li class="news__item news__item_small">
+					<li class="news__item news__item_small" data-aos="fade-up">
 						<a href="" class="news__itemImg-link">
 							<img src="https://picsum.photos/500/315/?random" alt="">
 						</a>
@@ -88,7 +89,7 @@
 							
 						</a>
 					</li>
-					<li class="news__item news__item_small">
+					<li class="news__item news__item_small" data-aos="fade-up">
 						<a href="" class="news__itemImg-link">
 							<img src="https://picsum.photos/500/315/?random" alt="">
 						</a>
@@ -105,9 +106,10 @@
 
 
 	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/animsition.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/aos.js"></script>
 <footer class="footer">
 	<div class="container">
 		<div class="row justify-content-between">
